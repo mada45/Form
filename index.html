@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,500,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="http://127.0.0.1:5500/" method="POST" id="form">
+      <h2 class="h2-title">ArchitectureQuote</h2>
+      <!-- Step One -->
+      <section name="step" id="step-one">
+        <h3 class="h3-title">Select type of project</h3>
+        <article class="form-container">
+          <div class="form-one">
+            <label
+              class="radio-card"
+              id="step-one-img-one-mob"
+              for="project-one"
+            >
+              <input
+                type="radio"
+                name="projectType"
+                class="projectType"
+                value="New Construction"
+                id="project-one"
+              />
+              <div class="images" id="step-one-image-one"></div>
+              <h4 class="radio-title">New Construction</h4>
+              <p>
+                Constructing a new house from scratch. This includes preparation
+                of the construction site, materials and labor.
+              </p>
+            </label>
+
+            <label
+              class="radio-card"
+              id="step-one-img-two-mob"
+              for="project-two"
+            >
+              <input
+                type="radio"
+                name="projectType"
+                class="projectType"
+                value="Structural Modification"
+                id="project-two"
+              />
+              <div class="images" id="step-one-image-two"></div>
+              <h4 class="radio-title">Structural Modification</h4>
+              <p>
+                The building is already complete but needs to be modified,
+                altered or improved.
+              </p>
+            </label>
+
+            <label
+              class="radio-card"
+              id="step-one-img-three-mob"
+              for="project-three"
+            >
+              <input
+                type="radio"
+                name="projectType"
+                class="projectType"
+                value="Renovation"
+                id="project-three"
+              />
+              <div class="images" id="step-one-image-three"></div>
+              <h4 class="radio-title">Renovation</h4>
+              <p>
+                The building is complete and needs to be renovated, repainted or
+                completely restored.
+              </p>
+            </label>
+
+            <label
+              class="radio-card"
+              id="step-one-img-four-mob"
+              for="project-four"
+            >
+              <input
+                type="radio"
+                name="projectType"
+                class="projectType"
+                value="Other"
+                id="project-four"
+              />
+              <div class="images" id="step-one-image-four"></div>
+              <h4 class="radio-title">Other</h4>
+            </label>
+          </div>
+          <span id="projectError"></span>
+
+          <button type="button" id="nextOne" class="next">
+            Next
+          </button>
+        </article>
+      </section>
+
+      <!-- Step Two -->
+      <section name="step" id="step-two">
+        <h3 class="h3-title">Select type of building</h3>
+        <article class="form-container">
+          <div class="form-one">
+            <label
+              class="radio-card"
+              id="step-two-img-one-mob"
+              for="building-one"
+            >
+              <input
+                type="radio"
+                value="Residential"
+                class="buildType"
+                name="buildType"
+                id="building-one"
+              />
+              <div class="images" id="step-two-image-one"></div>
+              <h4 class="radio-title">Residential</h4>
+            </label>
+
+            <label
+              class="radio-card"
+              id="step-two-img-two-mob"
+              for="building-two"
+            >
+              <input
+                type="radio"
+                value="Interior Design"
+                name="buildType"
+                class="buildType"
+                id="building-two"
+              />
+              <div class="images" id="step-two-image-two"></div>
+              <h4 class="radio-title">Interior Design</h4>
+            </label>
+
+            <label
+              class="radio-card"
+              id="step-two-img-three-mob"
+              for="building-three"
+            >
+              <input
+                type="radio"
+                value="Business building"
+                name="buildType"
+                class="buildType"
+                id="building-three"
+              />
+              <div class="images" id="step-two-image-three"></div>
+              <h4 class="radio-title">Business Building</h4>
+            </label>
+
+            <label
+              class="radio-card"
+              id="step-two-img-four-mob"
+              for="building-four"
+            >
+              <input
+                type="radio"
+                value="Healthcare or Lab Facility"
+                name="buildType"
+                class="buildType"
+                id="building-four"
+              />
+              <div class="images" id="step-two-image-four"></div>
+              <h4 class="radio-title">Healthcare or Lab Facility</h4>
+            </label>
+
+            <label
+              class="radio-card"
+              id="step-two-img-five-mob"
+              for="building-five"
+            >
+              <input
+                type="radio"
+                value="Industrial"
+                name="buildType"
+                class="buildType"
+                id="building-five"
+              />
+              <div class="images" id="step-two-image-five"></div>
+              <h4 class="radio-title">Industrial</h4>
+            </label>
+
+            <label
+              class="radio-card"
+              id="step-two-img-six-mob"
+              for="building-six"
+            >
+              <input
+                type="radio"
+                value="Academic"
+                name="buildType"
+                class="buildType"
+                id="building-six"
+              />
+              <div class="images" id="step-two-image-six"></div>
+              <h4 class="radio-title">Academic</h4>
+            </label>
+
+            <label
+              class="radio-card"
+              id="step-two-img-seven-mob"
+              for="building-seven"
+            >
+              <input
+                type="radio"
+                value="Landscape"
+                name="buildType"
+                class="buildType"
+                id="building-seven"
+              />
+              <div class="images" id="step-two-image-seven"></div>
+              <h4 class="radio-title">Landscape</h4>
+            </label>
+
+            <label
+              class="radio-card"
+              id="step-two-img-eight-mob"
+              for="building-eight"
+            >
+              <input
+                type="radio"
+                value="Other"
+                name="buildType"
+                class="buildType"
+                id="building-eight"
+              />
+              <div class="images" id="step-two-image-eight"></div>
+              <h4 class="radio-title">Other</h4>
+            </label>
+          </div>
+          <span id="buildingError"></span>
+          <button type="button" id="prevOne" class="prev">
+            Previous
+          </button>
+          <button
+            type="button"
+            id="nextTwo"
+            class="next"
+            onclick="processStepTwo()"
+          >
+            Next
+          </button>
+        </article>
+      </section>
+
+      <!-- Step Three -->
+      <section name="step" id="step-three">
+        <h3 class="h3-title">Project details</h3>
+        <article class="form-container">
+          <div class="form-two">
+            <div class="complexity-box">
+              <p>Choose Complexity of Project</p>
+              <select name="complexity" id="complexity">
+                <option value="Standard">Standard</option>
+                <option value="Light">Light Complexity</option>
+                <option value="High">High Complexity</option>
+              </select>
+            </div>
+
+            <div class="size-box">
+              <p>Size of Project</p>
+              <span id="sizeError"></span>
+              <input
+                type="number"
+                id="size"
+                name="projectSize"
+                placeholder="Square Meter"
+              />
+            </div>
+
+            <div class="design-box">
+              <p class="design-title">
+                Select the relevant architectural tasks
+              </p>
+              <span id="designError"></span>
+              <div class="checkbox-box">
+                <input
+                  type="checkbox"
+                  value="Concept Design"
+                  name="deliverables"
+                  class="deliverables"
+                  id="design-one"
+                />
+                <label id="checkbox-one" for="design-one"></label>
+                <p>Concept design</p>
+              </div>
+              <div class="checkbox-box">
+                <input
+                  type="checkbox"
+                  value="Schematic Design"
+                  name="deliverables"
+                  class="deliverables"
+                  id="design-two"
+                />
+                <label id="checkbox-two" for="design-two"></label>
+                <p>Schematic design</p>
+              </div>
+              <div class="checkbox-box">
+                <input
+                  type="checkbox"
+                  value="Detailed design"
+                  name="deliverables"
+                  class="deliverables"
+                  id="design-three"
+                />
+                <label id="checkbox-three" for="design-three"></label>
+                <p>Detailed design</p>
+              </div>
+              <div class="checkbox-box">
+                <input
+                  type="checkbox"
+                  value="Tender"
+                  name="deliverables"
+                  class="deliverables"
+                  id="design-four"
+                />
+                <label id="checkbox-four" for="design-four"></label>
+                <p>Tender</p>
+              </div>
+              <div class="checkbox-box">
+                <input id="design-all" type="checkbox" />
+                <label id="checkbox-all" for="design-all"></label>
+                <p>All</p>
+              </div>
+            </div>
+
+            <div class="floor-box">
+              <p>Number of floors</p>
+              <select name="height" id="floor">
+                <option value="Ground">Ground floor only</option>
+                <option value="1 Floor">1 floor</option>
+                <option value="2 Floor">2 floor</option>
+                <option value="3 Floor">3 floor</option>
+                <option value="More">More</option>
+              </select>
+            </div>
+
+            <div class="switch-box">
+              <p>Basement</p>
+              <input type="checkbox" name="basement" id="basement" />
+              <label id="checkbox-basement" for="basement"></label>
+            </div>
+          </div>
+
+          <button type="button" id="prevTwo" class="prev">
+            Previous
+          </button>
+          <button type="button" id="nextThree" class="next">
+            Next
+          </button>
+        </article>
+      </section>
+
+      <!-- Step Four -->
+      <section name="step" id="step-four">
+        <h3 class="h3-title">Contact information</h3>
+        <article class="form-container">
+          <div class="form-two">
+            <div class="contact-info">
+              <span id="firstnameError"></span>
+              <input
+                type="text"
+                class="text-input"
+                placeholder="First Name"
+                id="firstName"
+                name="firstName"
+              />
+              <span id="lastnameError"></span>
+              <input
+                type="text"
+                class="text-input"
+                placeholder="Last Name"
+                id="lastName"
+                name="lastName"
+              />
+
+              <input
+                type="number"
+                class="text-input"
+                placeholder="Phone"
+                name="telephone"
+              />
+
+              <span id="emailError"></span>
+              <input
+                type="text"
+                class="text-input"
+                id="email"
+                placeholder="Email"
+                name="email"
+              />
+            </div>
+            <div class="contact-info">
+              <span id="agreeError"></span>
+              <div class="checkbox-box">
+                <input type="checkbox" name="gdpr" id="agree-two" />
+                <label id="agree-checkbox-two" for="agree-two"></label>
+                <p>
+                  I agree to the <a href="#">Terms and Conditions</a> of
+                  ArchitectureQuote IVS
+                </p>
+              </div>
+              <span id="agreeError"></span>
+
+              <div class="checkbox-box">
+                <input type="checkbox" name="news" id="agree-three" />
+                <label id="agree-checkbox-three" for="agree-three"></label>
+                <p>
+                  I would like to receive relevant marketing materials and
+                  emails from ArchitectureQuote IVS
+                </p>
+              </div>
+            </div>
+          </div>
+          <button type="button" id="prevThree" class="prev">
+            Previous
+          </button>
+          <button type="submit" id="nextFour" class="next">
+            Submit
+          </button>
+        </article>
+      </section>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>

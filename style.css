@@ -1,0 +1,543 @@
+#step-two,
+#step-three,
+#step-four {
+  display: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+form * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #2c2e3e;
+  font-weight: 300;
+}
+
+.h2-title,
+.h3-title {
+  display: flex;
+  justify-content: center;
+}
+
+.h2-title {
+  margin-top: 1em;
+  font-weight: 800;
+}
+
+.h3-title,
+.design-title {
+  margin-bottom: 1em;
+}
+
+.design-title,
+.size-box p,
+.complexity-box p,
+.floor-box p,
+.switch-box p {
+  font-weight: 500;
+}
+
+.form-one,
+.form-two {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+  margin: 2em;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio-card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  cursor: pointer;
+  min-height: 8em;
+}
+
+.radio-card p,
+.radio-title {
+  margin: 0.5em 1.3em 1.3em;
+}
+
+.radio-title {
+  font-weight: 800;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.radio-card p {
+  font-weight: 500;
+}
+
+#step-one-img-one-mob {
+  background: url(img-one.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#step-one-img-two-mob {
+  background: url(img-two.png);
+  background-size: cover;
+  background-position: 0 -15em;
+  background-repeat: no-repeat;
+}
+
+#step-one-img-three-mob {
+  background: url(img-three.png);
+  background-size: cover;
+  background-position: 0 -4em;
+  background-repeat: no-repeat;
+}
+
+#step-one-img-four-mob {
+  background: url(img-four.png);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+button {
+  padding: 0.7em;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: none;
+  border: none;
+  background: #ef6461;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.next {
+  margin: 0 2em 2em 0;
+  float: right;
+}
+
+.prev {
+  margin: 0 0 2em 2em;
+}
+
+input:checked + .radio-card {
+  position: relative;
+}
+
+input:checked + .radio-card::after {
+  content: "✓";
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  font-size: 1.5em;
+  line-height: 2em;
+  padding: 0px 0.6em;
+  border-radius: 50%;
+  background: rgb(239, 100, 97);
+  margin: auto;
+}
+
+input:checked + .radio-card::before {
+  content: "";
+  background: black;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+}
+
+/* step three ----------------------------------------*/
+#step-two-img-one-mob {
+  background: url(img-five.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#step-two-img-two-mob {
+  background: url(img-six.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+#step-two-img-three-mob {
+  background: url(img-seven.png);
+  background-size: cover;
+  background-position: 0 -6.5em;
+  background-repeat: no-repeat;
+}
+
+#step-two-img-four-mob {
+  background: url(img-eight.png);
+  background-size: cover;
+  background-position: 0 -4em;
+  background-repeat: no-repeat;
+}
+
+#step-two-img-five-mob {
+  background: url(img-nine.png);
+  background-size: cover;
+  background-position: 0 -2em;
+  background-repeat: no-repeat;
+}
+
+#step-two-img-six-mob {
+  background: url(img-ten.png);
+  background-size: cover;
+  background-position: 0 -3em;
+  background-repeat: no-repeat;
+}
+
+#step-two-img-seven-mob {
+  background: url(img-eleven.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+#step-two-img-eight-mob {
+  background: url(img-twelve.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+/* step three ----------------------------------------*/
+
+#complexity,
+#size,
+#floor,
+.switch,
+.text-input {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 40vw;
+  height: 6vh;
+  margin-top: 1em;
+  outline: none;
+}
+
+.text-input {
+  margin: 0 0 1em 0;
+}
+
+#size,
+.text-input {
+  padding-left: 0.5em;
+}
+
+.size-box,
+.floor-box,
+.switch-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.design-box {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#design-one,
+#design-two,
+#design-three,
+#design-four,
+#design-all,
+#agree-one,
+#agree-two,
+#agree-three {
+  display: none;
+}
+
+.design-box p {
+  display: inline;
+}
+
+.checkbox-box {
+  display: grid;
+  grid-template-columns: 1em 1fr;
+  grid-gap: 0.5em;
+}
+
+#checkbox-one,
+#checkbox-two,
+#checkbox-three,
+#checkbox-four,
+#checkbox-all,
+#checkbox-basement,
+#agree-checkbox-two,
+#agree-checkbox-three {
+  display: block;
+  top: 4px;
+  position: relative;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  background: #dfe2ea;
+  cursor: pointer;
+  margin-right: 0.5em;
+}
+
+#design-one:checked ~ #checkbox-one,
+#design-two:checked ~ #checkbox-two,
+#design-three:checked ~ #checkbox-three,
+#design-four:checked ~ #checkbox-four,
+#design-all:checked ~ #checkbox-all,
+#basement:checked ~ #checkbox-basement,
+#agree-two:checked ~ #agree-checkbox-two,
+#agree-three:checked ~ #agree-checkbox-three {
+  background: #ef6461;
+}
+
+#basement {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+#checkbox-basement {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* step four ----------------------------------------*/
+
+.text-input {
+  width: 100%;
+}
+
+input[name="First Name"] {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ef6461;
+  font-weight: 800;
+}
+
+/* error messages ------------------------------------------ */
+#projectError,
+#buildingError {
+  color: red;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+#sizeError,
+#designError,
+#firstnameError,
+#emailError,
+#lastnameError,
+#agreeError {
+  color: red;
+  font-weight: 500;
+}
+
+/* Tablet ----------------------------------------*/
+@media only screen and (min-width: 768px) {
+  /* step one ----------------------------------------*/
+  .form-one,
+  .form-two {
+    grid-template-columns: 1fr 1fr;
+    margin: 2em 6em;
+  }
+
+  .radio-card p {
+    font-weight: 300;
+  }
+
+  #step-one-img-one-mob,
+  #step-one-img-two-mob,
+  #step-one-img-three-mob,
+  #step-one-img-four-mob {
+    background: none;
+  }
+
+  input:checked + .radio-card::before {
+    opacity: 0.2;
+  }
+
+  .next {
+    margin: 0 6em 2em 0;
+  }
+
+  .prev {
+    margin: 0 0 2em 6em;
+  }
+
+  .images {
+    height: 15vh;
+    width: auto;
+    border-radius: 10px 10px 0 0;
+  }
+
+  #step-one-image-one {
+    background: url(https://architecturequote.com/wp-content/uploads/2019/08/construction.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  #step-one-image-two {
+    background: url(https://architecturequote.com/wp-content/uploads/2019/08/roof.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #step-one-image-three {
+    background: url(https://architecturequote.com/wp-content/uploads/2019/08/work.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  #step-one-image-four {
+    background: url(https://architecturequote.com/wp-content/uploads/2019/08/architect.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  /* step two ----------------------------------------*/
+
+  #step-two-img-one-mob,
+  #step-two-img-two-mob,
+  #step-two-img-three-mob,
+  #step-two-img-four-mob,
+  #step-two-img-five-mob,
+  #step-two-img-six-mob,
+  #step-two-img-seven-mob,
+  #step-two-img-eight-mob {
+    background: none;
+  }
+
+  #step-two-image-one {
+    background: url(https://architecturequote.com/wp-content/uploads/2019/08/resedential.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #step-two-image-two {
+    background: url(https://architecturequote.com/wp-content/uploads/2019/09/interior-design-form.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #step-two-image-three {
+    background: url(https://architecturequote.com/wp-content/uploads/2019/08/business.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #step-two-image-four {
+    background: url(https://architecturequote.com/wp-content/uploads/2019/08/healthcare.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #step-two-image-five {
+    background: url(https://architecturequote.com/wp-content/uploads/2019/08/industrial.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #step-two-image-six {
+    background: url(https://architecturequote.com/wp-content/uploads/2019/08/educational.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #step-two-image-seven {
+    background: url(https://architecturequote.com/wp-content/uploads/2019/08/landscape.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #step-two-image-eight {
+    background: url(https://architecturequote.com/wp-content/uploads/2019/08/other.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* step-three ----------------------------------------*/
+  #complexity,
+  #size,
+  #floor {
+    width: 100%;
+    height: 4vh;
+  }
+
+  .text-input {
+    height: 4vh;
+  }
+}
+
+/* Desktop ----------------------------------------*/
+@media only screen and (min-width: 1200px) {
+  .form-one {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4em;
+  }
+
+  .form-container {
+    margin: 0 10em;
+  }
+
+  .radio-card {
+    min-height: 18em;
+  }
+
+  .images {
+    min-height: 25vh;
+  }
+
+  .switch {
+    width: 8vw;
+    height: 6vh;
+  }
+
+  #basement::after {
+    right: -2em;
+  }
+
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #complexity,
+  #size,
+  #floor {
+    width: 40%;
+    height: 4vh;
+  }
+
+  .text-input {
+    width: 20vw;
+  }
+}
